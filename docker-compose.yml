@@ -1,9 +1,7 @@
 version: "3.9"
 services:
   txt2img:
-    build:
-      context: .
-    #network_mode: host
+    image: iomz/diffusers-jetson
     runtime: nvidia
     volumes:
        - ./:/app

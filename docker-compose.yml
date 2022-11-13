@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  txt2img:
+    build:
+      context: .
+    #network_mode: host
+    runtime: nvidia
+    volumes:
+       - ./:/app
+
